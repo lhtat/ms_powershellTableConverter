@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>API specification</h2>
+When a client calls "GET /catbreeds", the API should return the same data in JSON format from the following static master data table:
+
+<table class="wikitable sortable jquery-tablesorter">
+  <thead><tr>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Breed
+  </th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Location of origin
+  </th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Type
+  </th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Body
+  </th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending"><b>Coat</b>
+  </th>
+  <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">CoatPattern
+  </th>
+  <th class="unsortable">Image
+  </th></tr></thead><tbody>
+  <tr>
+  <th scope="row"><a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup>
+  </th>
+  <td>Unspecified, but somewhere in Afro-Asia, likely <a href="/wiki/Ethiopia" title="Ethiopia">Ethiopia</a><sup id="cite_ref-Abyssinian_Profile_8-0" class="reference"><a href="#cite_note-Abyssinian_Profile-8">[8]</a></sup></td>
+  <td>Natural</td>
+  <td>Semi-foreign
+  </td>
+  <td>Short</td>
+  <td>Ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Gustav_chocolate.jpg" class="mw-file-description"><img alt="Abyssinian" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/100px-Gustav_chocolate.jpg" decoding="async" width="100" height="143" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/151px-Gustav_chocolate.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/200px-Gustav_chocolate.jpg 2x" data-file-width="1000" data-file-height="1427"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Aegean_cat" title="Aegean cat">Aegean</a>
+  </th>
+  <td>Greece</td>
+  <td>Natural</td>
+  <td>Moderate
+  </td>
+  <td>Semi-long</td>
+  <td>Multi-color</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Aegean_cat.jpg" class="mw-file-description"><img alt="Aegean" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/100px-Aegean_cat.jpg" decoding="async" width="100" height="154" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/150px-Aegean_cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/200px-Aegean_cat.jpg 2x" data-file-width="772" data-file-height="1186"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/American_Bobtail" title="American Bobtail">American Bobtail</a><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-0" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of shortened tail</td>
+  <td>Cobby
+  </td>
+  <td>Semi-long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:American_bobtail_2.jpg" class="mw-file-description"><img alt="American Bobtail" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/100px-American_bobtail_2.jpg" decoding="async" width="100" height="125" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/150px-American_bobtail_2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/200px-American_bobtail_2.jpg 2x" data-file-width="988" data-file-height="1237"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/American_Curl" title="American Curl">American Curl</a><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-1" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation</td>
+  <td>Semi-foreign
+  </td>
+  <td>Semi-long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG" class="mw-file-description"><img alt="American Curl" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG/100px-EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG" decoding="async" width="100" height="135" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG/150px-EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a5/EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG/199px-EC_Recknagel_Annakurnikoova_ACS_gs_24.JPG 2x" data-file-width="613" data-file-height="830"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/w/index.php?title=American_Ringtail&amp;action=edit&amp;redlink=1" class="new" title="American Ringtail (page does not exist)">American Ringtail</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-2" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation</td>
+  <td>Foreign
+  </td>
+  <td>Semi-long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg" class="mw-file-description"><img alt="American Ringtail" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg/100px-Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg/150px-Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg/200px-Chunky_Monkey_American_Ringtail_Cat_3rd_Generation.jpg 2x" data-file-width="2048" data-file-height="1536"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-3" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Cobby
+  </td>
+  <td>Short</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:GC_Yatfung%27s_Brown_Cobra.jpg" class="mw-file-description"><img alt="American Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/GC_Yatfung%27s_Brown_Cobra.jpg/100px-GC_Yatfung%27s_Brown_Cobra.jpg" decoding="async" width="100" height="103" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/GC_Yatfung%27s_Brown_Cobra.jpg/150px-GC_Yatfung%27s_Brown_Cobra.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ed/GC_Yatfung%27s_Brown_Cobra.jpg/200px-GC_Yatfung%27s_Brown_Cobra.jpg 2x" data-file-width="1077" data-file-height="1112"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/American_Wirehair" title="American Wirehair">American Wirehair</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-4" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation</td>
+  <td>Normal
+  </td>
+  <td>Rex</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG" class="mw-file-description"><img alt="American Wirehair" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG/100px-American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG" decoding="async" width="100" height="100" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG/150px-American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7f/American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG/200px-American_Wirehair_-_CFF_cat_show_Heinola_2008-05-04_IMG_8721.JPG 2x" data-file-width="802" data-file-height="798"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Cyprus_cat#Aphrodite_Giant" title="Cyprus cat">Aphrodite Giant</a>
+  </th>
+  <td>Cyprus</td>
+  <td>Natural</td>
+  <td>Lean and muscular</td>
+  <td>All</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Aphrodite%27s_Giant.jpg" class="mw-file-description"><img alt="Aphrodite Giant" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aphrodite%27s_Giant.jpg/100px-Aphrodite%27s_Giant.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aphrodite%27s_Giant.jpg/150px-Aphrodite%27s_Giant.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aphrodite%27s_Giant.jpg/200px-Aphrodite%27s_Giant.jpg 2x" data-file-width="4608" data-file-height="3456"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Arabian_Mau" title="Arabian Mau">Arabian Mau</a>
+  </th>
+  <td>Arabian Peninsula</td>
+  <td>Natural</td>
+  <td>Moderate and muscular
+  </td>
+  <td>Short</td>
+  <td>All
+  </td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Arabian_Mau_Kitten_(cropped).jpg" class="mw-file-description"><img alt="Arabian Mau" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Arabian_Mau_Kitten_%28cropped%29.jpg/100px-Arabian_Mau_Kitten_%28cropped%29.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Arabian_Mau_Kitten_%28cropped%29.jpg/150px-Arabian_Mau_Kitten_%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Arabian_Mau_Kitten_%28cropped%29.jpg/200px-Arabian_Mau_Kitten_%28cropped%29.jpg 2x" data-file-width="2278" data-file-height="3418"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Asian_cat" title="Asian cat">Asian</a>
+  </th>
+  <td>United Kingdom</td>
+  <td>Crossbreed between the <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a> and <a href="/wiki/Persian_cat" title="Persian cat">Chinchilla Persians</a>
+  </td>
+  <td>Moderate
+  </td>
+  <td>Short</td>
+  <td>All without white and without siamese pointing</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:BrownVarientAsianCat.JPG" class="mw-file-description"><img alt="Asian" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/100px-BrownVarientAsianCat.JPG" decoding="async" width="100" height="133" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/150px-BrownVarientAsianCat.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BrownVarientAsianCat.JPG/199px-BrownVarientAsianCat.JPG 2x" data-file-width="480" data-file-height="640"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Asian_Semi-longhair" class="mw-redirect" title="Asian Semi-longhair">Asian Semi-longhair</a>
+  </th>
+  <td>United Kingdom</td>
+  <td>Crossbreed between the <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a> and <a href="/wiki/Persian_cats" class="mw-redirect" title="Persian cats">Chinchilla Persians</a></td>
+  <td>Moderate
+  </td>
+  <td>Semi-long</td>
+  <td>All without white and without siamese pointing</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Tiffanie_at_cat_show.jpg" class="mw-file-description"><img alt="Asian Semi-longhair" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/100px-Tiffanie_at_cat_show.jpg" decoding="async" width="100" height="121" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/151px-Tiffanie_at_cat_show.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tiffanie_at_cat_show.jpg/201px-Tiffanie_at_cat_show.jpg 2x" data-file-width="775" data-file-height="935"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Australian_Mist" title="Australian Mist">Australian Mist</a>
+  </th>
+  <td>Australia<sup id="cite_ref-:1_12-0" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a>, <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a>, and Australian <a href="/wiki/Domestic_short-haired_cat" title="Domestic short-haired cat">short-haired cats</a><sup id="cite_ref-:1_12-1" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Spotted or marbled</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Australian_Mist.jpg" class="mw-file-description"><img alt="Australian Mist" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/100px-Australian_Mist.jpg" decoding="async" width="100" height="102" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/150px-Australian_Mist.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Australian_Mist.jpg/201px-Australian_Mist.jpg 2x" data-file-width="870" data-file-height="885"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Balinese_cat" title="Balinese cat">Balinese</a>
+  </th>
+  <td>Developed in United States;<sup id="cite_ref-Paragon_10-5" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup><br>foundation stock from Thailand</td>
+  <td>Mutation of the <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a>
+  </td>
+  <td>Semi-foreign</td>
+  <td>Long</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Ghislaine_6028.jpg" class="mw-file-description"><img alt="Balinese" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ghislaine_6028.jpg/100px-Ghislaine_6028.jpg" decoding="async" width="100" height="67" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ghislaine_6028.jpg/150px-Ghislaine_6028.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ghislaine_6028.jpg/200px-Ghislaine_6028.jpg 2x" data-file-width="729" data-file-height="486"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Bambino_cat" title="Bambino cat">Bambino</a>
+  </th>
+  <td>United States<sup id="cite_ref-:1_12-2" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Munchkin_cat" title="Munchkin cat">Munchkin</a> and <a href="/wiki/Sphynx_cat" title="Sphynx cat">Sphynx</a><sup id="cite_ref-:1_12-3" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Short</td>
+  <td>Black + white hairless
+  </td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Bengal_cat" title="Bengal cat">Bengal</a>
+  </th>
+  <td>Developed in United States,<sup id="cite_ref-:1_12-4" class="reference"><a href="#cite_note-:1-12">[12]</a></sup><br>but created in Asia</td>
+  <td>Hybrid of the <a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a> and <a href="/wiki/Egyptian_Mau" title="Egyptian Mau">Egyptian Mau</a> ×&nbsp;<a href="/wiki/Leopard_cat" title="Leopard cat">leopard cat</a> (<i>Prionailurus bengalensis</i>)</td>
+  <td>Large
+  </td>
+  <td>Short</td>
+  <td>Spotted, marbled, or rosetted</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Paintedcats_Red_Star_standing.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Paintedcats_Red_Star_standing.jpg/100px-Paintedcats_Red_Star_standing.jpg" decoding="async" width="100" height="128" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Paintedcats_Red_Star_standing.jpg/149px-Paintedcats_Red_Star_standing.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Paintedcats_Red_Star_standing.jpg/199px-Paintedcats_Red_Star_standing.jpg 2x" data-file-width="1200" data-file-height="1541"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Birman" title="Birman">Birman</a>
+  </th>
+  <td>Developed in France;<br>foundation stock from Burma (Myanmar)<sup id="cite_ref-Paragon_10-6" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>The original Birman was crossed with the <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a> and the <a href="/wiki/Persian_cat" title="Persian cat">Persian</a> to create the Birman of today.</td>
+  <td>Cobby
+  </td>
+  <td>Semi-long</td>
+  <td>Mitted colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Birman2.jpg" class="mw-file-description"><img alt="Birman" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/100px-Birman2.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/150px-Birman2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Birman2.jpg/200px-Birman2.jpg 2x" data-file-width="604" data-file-height="453"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Bombay_cat" title="Bombay cat">Bombay</a>
+  </th>
+  <td>United States and Burma (Myanmar)</td>
+  <td>Crossbreed between the Black <a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a> and Sable <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a></td>
+  <td>Cobby</td>
+  <td>Short</td>
+  <td>Solid black</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Bombay_femelle.JPG" class="mw-file-description"><img alt="Bombay" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Bombay_femelle.JPG/100px-Bombay_femelle.JPG" decoding="async" width="100" height="125" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Bombay_femelle.JPG/150px-Bombay_femelle.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Bombay_femelle.JPG/200px-Bombay_femelle.JPG 2x" data-file-width="634" data-file-height="792"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Brazilian_Shorthair" title="Brazilian Shorthair">Brazilian Shorthair</a>
+  </th>
+  <td>Brazil</td>
+  <td>Natural</td>
+  <td>Normal
+  </td>
+  <td>Short</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Gato_pelo_curto_brasileiro.JPG" class="mw-file-description"><img alt="Brazilian Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gato_pelo_curto_brasileiro.JPG/100px-Gato_pelo_curto_brasileiro.JPG" decoding="async" width="100" height="133" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gato_pelo_curto_brasileiro.JPG/150px-Gato_pelo_curto_brasileiro.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gato_pelo_curto_brasileiro.JPG/199px-Gato_pelo_curto_brasileiro.JPG 2x" data-file-width="480" data-file-height="640"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/British_Longhair" title="British Longhair">British Longhair</a>
+  </th>
+  <td>United Kingdom (England)<sup id="cite_ref-Paragon_10-7" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural
+  </td>
+  <td>Cobby</td>
+  <td>Semi-long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:British_Longhair_-_Black_Silver_Shaded.jpg" class="mw-file-description"><img alt="British Semi-longhair" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/British_Longhair_-_Black_Silver_Shaded.jpg/100px-British_Longhair_-_Black_Silver_Shaded.jpg" decoding="async" width="100" height="133" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/British_Longhair_-_Black_Silver_Shaded.jpg/150px-British_Longhair_-_Black_Silver_Shaded.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/50/British_Longhair_-_Black_Silver_Shaded.jpg/199px-British_Longhair_-_Black_Silver_Shaded.jpg 2x" data-file-width="768" data-file-height="1024"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/British_Shorthair" title="British Shorthair">British Shorthair</a>
+  </th>
+  <td>United Kingdom (England)<sup id="cite_ref-Paragon_10-8" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Cobby</td>
+  <td>Short</td>
+  <td>All<sup id="cite_ref-GCCF_BSH_standard_13-0" class="reference"><a href="#cite_note-GCCF_BSH_standard-13">[13]</a></sup></td>
+  <td><span typeof="mw:File"><a href="/wiki/File:British_Shorthair_Assis.jpg" class="mw-file-description"><img alt="British Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/British_Shorthair_Assis.jpg/99px-British_Shorthair_Assis.jpg" decoding="async" width="99" height="106" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/British_Shorthair_Assis.jpg/149px-British_Shorthair_Assis.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/British_Shorthair_Assis.jpg/199px-British_Shorthair_Assis.jpg 2x" data-file-width="797" data-file-height="850"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a>
+  </th>
+  <td>Burma (Myanmar)<sup id="cite_ref-Paragon_10-9" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Semi-foreign or semi-cobby
+  </td>
+  <td>Short</td>
+  <td>Solid and Tortoiseshell<sup id="cite_ref-TICA_Burmese_breed_introduction_14-0" class="reference"><a href="#cite_note-TICA_Burmese_breed_introduction-14">[14]</a></sup></td>
+  <td><span typeof="mw:File"><a href="/wiki/File:BurMau_Vega_Star,_champagne_burmese_kitten.jpg" class="mw-file-description"><img alt="Burmese" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/BurMau_Vega_Star%2C_champagne_burmese_kitten.jpg/100px-BurMau_Vega_Star%2C_champagne_burmese_kitten.jpg" decoding="async" width="100" height="67" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/BurMau_Vega_Star%2C_champagne_burmese_kitten.jpg/150px-BurMau_Vega_Star%2C_champagne_burmese_kitten.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fc/BurMau_Vega_Star%2C_champagne_burmese_kitten.jpg/200px-BurMau_Vega_Star%2C_champagne_burmese_kitten.jpg 2x" data-file-width="3500" data-file-height="2333"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Burmilla" title="Burmilla">Burmilla</a>
+  </th>
+  <td>United Kingdom (England)<sup id="cite_ref-Paragon_10-10" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a> and the Chinchilla <a href="/wiki/Persian_cat" title="Persian cat">Persian</a></td>
+  <td>Semi-cobby
+  </td>
+  <td>Short</td>
+  <td>Solid with Shaded Silver and Silver Tipped patterns</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Male_Burmilla_cat.jpeg" class="mw-file-description"><img alt="Burmilla" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Male_Burmilla_cat.jpeg/100px-Male_Burmilla_cat.jpeg" decoding="async" width="100" height="90" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Male_Burmilla_cat.jpeg/150px-Male_Burmilla_cat.jpeg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Male_Burmilla_cat.jpeg/200px-Male_Burmilla_cat.jpeg 2x" data-file-width="471" data-file-height="423"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/California_Spangled" title="California Spangled">California Spangled</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-11" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a>, <a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a> and <a href="/wiki/British_Shorthair" title="British Shorthair">British Shorthair</a></td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Spotted tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Star_Spangled_Cat.jpg" class="mw-file-description"><img alt="California Spangled" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/100px-Star_Spangled_Cat.jpg" decoding="async" width="100" height="68" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/150px-Star_Spangled_Cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Spangled_Cat.jpg/200px-Star_Spangled_Cat.jpg 2x" data-file-width="450" data-file-height="306"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Chantilly-Tiffany" title="Chantilly-Tiffany">Chantilly-Tiffany</a>
+  </th>
+  <td>United States</td>
+  <td>Natural</td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>Solid, classic <a href="/wiki/Tabby_cat" title="Tabby cat">tabby</a>, spotted tabby and ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Tiffany4_(2018;_cropped_2023).jpg" class="mw-file-description"><img alt="Chantilly-Tiffany" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tiffany4_%282018%3B_cropped_2023%29.jpg/100px-Tiffany4_%282018%3B_cropped_2023%29.jpg" decoding="async" width="100" height="100" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tiffany4_%282018%3B_cropped_2023%29.jpg/150px-Tiffany4_%282018%3B_cropped_2023%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tiffany4_%282018%3B_cropped_2023%29.jpg/200px-Tiffany4_%282018%3B_cropped_2023%29.jpg 2x" data-file-width="2938" data-file-height="2939"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Chartreux" title="Chartreux">Chartreux</a>
+  </th>
+  <td>France<sup id="cite_ref-Paragon_10-12" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Muscular; cobby</td>
+  <td>Short</td>
+  <td>Varying shades of blue</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Abbaye_fev2006_003.jpg" class="mw-file-description"><img alt="Chartreux" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Abbaye_fev2006_003.jpg/100px-Abbaye_fev2006_003.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Abbaye_fev2006_003.jpg/149px-Abbaye_fev2006_003.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Abbaye_fev2006_003.jpg/199px-Abbaye_fev2006_003.jpg 2x" data-file-width="300" data-file-height="451"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Chausie" title="Chausie">Chausie</a>
+  </th>
+  <td>United States</td>
+  <td>Hybrid of the <a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a> ×&nbsp;<a href="/wiki/Jungle_cat" title="Jungle cat">jungle cat</a> (<i>Felis chaus</i>)</td>
+  <td>Normal</td>
+  <td>Short</td>
+  <td>Solid black, black grizzled tabby and black ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Chausiecatexample.jpg" class="mw-file-description"><img alt="Chausie" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chausiecatexample.jpg/100px-Chausiecatexample.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chausiecatexample.jpg/150px-Chausiecatexample.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chausiecatexample.jpg/200px-Chausiecatexample.jpg 2x" data-file-width="800" data-file-height="600"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Colorpoint_Shorthair" title="Colorpoint Shorthair">Colorpoint Shorthair</a>
+  </th>
+  <td>United Kingdom (England)</td>
+  <td>Crossbreed between the <a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a>, <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a> and <a href="/wiki/Domestic_short-haired_cat" title="Domestic short-haired cat">short-haired cats</a>
+  </td>
+  <td>Foreign
+  </td>
+  <td>Short</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Tortie-point.jpg" class="mw-file-description"><img alt="Colorpoint Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tortie-point.jpg/99px-Tortie-point.jpg" decoding="async" width="99" height="74" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tortie-point.jpg/149px-Tortie-point.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tortie-point.jpg/198px-Tortie-point.jpg 2x" data-file-width="640" data-file-height="480"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Cornish_Rex" title="Cornish Rex">Cornish Rex</a>
+  </th>
+  <td>Cornwall, England,
+  <p>United Kingdom
+  </p>
+  </td>
+  <td>Mutation</td>
+  <td>Foreign
+  </td>
+  <td>Rex</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Cornish_Rex.jpg" class="mw-file-description"><img alt="Cornish Rex" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Cornish_Rex.jpg/99px-Cornish_Rex.jpg" decoding="async" width="99" height="122" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Cornish_Rex.jpg/149px-Cornish_Rex.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Cornish_Rex.jpg/199px-Cornish_Rex.jpg 2x" data-file-width="1142" data-file-height="1399"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Cymric_cat" title="Cymric cat">Cymric</a>, Manx Longhair or Long-haired Manx<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[a]</a></sup>
+  </th>
+  <td>Isle of Man, United States, and Canada <sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[b]</a></sup><sup id="cite_ref-Paragon_10-13" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of the Manx (shortened tail)</td>
+  <td>Semi-cobby
+  </td>
+  <td>Long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG" class="mw-file-description"><img alt="Cymric" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG/100px-Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG" decoding="async" width="100" height="105" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG/150px-Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG/200px-Cymric_-_Norwegian_forest_cat_presentation_show_Kotka_2009-02-01_IMG_0687.JPG 2x" data-file-width="718" data-file-height="755"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Cyprus_cat" title="Cyprus cat">Cyprus</a>
+  </th>
+  <td>Cyprus</td>
+  <td>Natural</td>
+  <td>Lean and muscular</td>
+  <td>All</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:CyprusShorthair.jpg" class="mw-file-description"><img alt="Cyprus" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CyprusShorthair.jpg/100px-CyprusShorthair.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CyprusShorthair.jpg/150px-CyprusShorthair.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CyprusShorthair.jpg/200px-CyprusShorthair.jpg 2x" data-file-width="1024" data-file-height="768"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Devon_Rex" title="Devon Rex">Devon Rex</a>
+  </th>
+  <td>Buckfastleigh, Devon, England, United Kingdom</td>
+  <td>Mutation</td>
+  <td>Semi-foreign</td>
+  <td>Rex</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Devon_rex.jpg" class="mw-file-description"><img alt="Devon Rex" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Devon_rex.jpg/100px-Devon_rex.jpg" decoding="async" width="100" height="84" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Devon_rex.jpg/150px-Devon_rex.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/33/Devon_rex.jpg/200px-Devon_rex.jpg 2x" data-file-width="600" data-file-height="505"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Donskoy_cat" title="Donskoy cat">Donskoy</a> or<br>Don Sphynx
+  </th>
+  <td>Russia</td>
+  <td>Mutation
+  </td>
+  <td>Semi-foreign
+  </td>
+  <td>Hairless</td>
+  <td>Solid</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Donskoy.jpg" class="mw-file-description"><img alt="Donskoy or Don Sphynx" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Donskoy.jpg/100px-Donskoy.jpg" decoding="async" width="100" height="108" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Donskoy.jpg/150px-Donskoy.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Donskoy.jpg/199px-Donskoy.jpg 2x" data-file-width="446" data-file-height="483"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Dragon_Li" title="Dragon Li">Dragon Li</a> or<br>Chinese Li Hua
+  </th>
+  <td>China</td>
+  <td>Natural</td>
+  <td>Normal
+  </td>
+  <td>Short</td>
+  <td>Ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Dragon_Li_-_Li_Hua_Mau1.jpg" class="mw-file-description"><img alt="Dragon Li or Chinese Li Hua" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dragon_Li_-_Li_Hua_Mau1.jpg/100px-Dragon_Li_-_Li_Hua_Mau1.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dragon_Li_-_Li_Hua_Mau1.jpg/150px-Dragon_Li_-_Li_Hua_Mau1.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dragon_Li_-_Li_Hua_Mau1.jpg/200px-Dragon_Li_-_Li_Hua_Mau1.jpg 2x" data-file-width="240" data-file-height="180"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/List_of_experimental_cat_breeds#Dwelf" title="List of experimental cat breeds">Dwelf</a>
+  </th>
+  <td>United States</td>
+  <td>Crossbreed between the <a href="/wiki/American_Curl" title="American Curl">American Curl</a>, <a href="/wiki/Munchkin_cat" title="Munchkin cat">Munchkin</a> and <a href="/wiki/Sphynx_cat" title="Sphynx cat">Sphynx</a></td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Hairless</td>
+  <td>All</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Egyptian_Mau" title="Egyptian Mau">Egyptian Mau</a>
+  </th>
+  <td>Egypt<sup id="cite_ref-Paragon_10-14" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Moderate and muscular</td>
+  <td>Short</td>
+  <td>Spotted tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Mau_Egytien.jpg" class="mw-file-description"><img alt="Egyptian Mau" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mau_Egytien.jpg/100px-Mau_Egytien.jpg" decoding="async" width="100" height="118" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mau_Egytien.jpg/150px-Mau_Egytien.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mau_Egytien.jpg/200px-Mau_Egytien.jpg 2x" data-file-width="702" data-file-height="830"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/European_Shorthair" title="European Shorthair">European Shorthair</a>
+  </th>
+  <td>Continental Europe<sup id="cite_ref-Paragon_10-15" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG" class="mw-file-description"><img alt="European Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG/99px-Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG" decoding="async" width="99" height="130" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG/149px-Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/11/Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG/199px-Female_European_shorthair_in_URK_cat_show_Kirkkonummi_2008-03-02.JPG 2x" data-file-width="700" data-file-height="915"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Exotic_Shorthair" title="Exotic Shorthair">Exotic Shorthair</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-16" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a> and <a href="/wiki/Persian_cat" title="Persian cat">Persian</a></td>
+  <td>Cobby</td>
+  <td>Short</td>
+  <td>All
+  </td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Nipsu-Nappulan_Non-Stop_Exotic_shorthair_(cropped).JPG" class="mw-file-description"><img alt="Exotic Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nipsu-Nappulan_Non-Stop_Exotic_shorthair_%28cropped%29.JPG/99px-Nipsu-Nappulan_Non-Stop_Exotic_shorthair_%28cropped%29.JPG" decoding="async" width="99" height="77" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nipsu-Nappulan_Non-Stop_Exotic_shorthair_%28cropped%29.JPG/149px-Nipsu-Nappulan_Non-Stop_Exotic_shorthair_%28cropped%29.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nipsu-Nappulan_Non-Stop_Exotic_shorthair_%28cropped%29.JPG/198px-Nipsu-Nappulan_Non-Stop_Exotic_shorthair_%28cropped%29.JPG 2x" data-file-width="738" data-file-height="573"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Foldex_cat" title="Foldex cat">Foldex</a><b><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[15]</a></sup></b>
+  </th>
+  <td>Canada</td>
+  <td>Crossbreed between the <a href="/wiki/Exotic_Shorthair" title="Exotic Shorthair">Exotic Shorthair</a> and <a href="/wiki/Scottish_Fold" title="Scottish Fold">Scottish Fold</a></td>
+  <td>Cobby</td>
+  <td>Short</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Cachorro_de_Gato_FoldEx_(%22Belisario_del_Laberinto%22).JPG" class="mw-file-description"><img alt="Foldex" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/100px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG" decoding="async" width="100" height="107" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/150px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG/200px-Cachorro_de_Gato_FoldEx_%28%22Belisario_del_Laberinto%22%29.JPG 2x" data-file-width="2084" data-file-height="2232"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/German_Rex" title="German Rex">German Rex</a>
+  </th>
+  <td>Germany<sup id="cite_ref-Paragon_10-17" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation</td>
+  <td>Semi-foreign
+  </td>
+  <td>Rex</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:German_Rex.jpg" class="mw-file-description"><img alt="German Rex" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/German_Rex.jpg/100px-German_Rex.jpg" decoding="async" width="100" height="98" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/German_Rex.jpg/150px-German_Rex.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/German_Rex.jpg/200px-German_Rex.jpg 2x" data-file-width="814" data-file-height="800"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Havana_Brown" title="Havana Brown">Havana Brown</a>
+  </th>
+  <td>United Kingdom (England);<br>foundation stock from Thailand</td>
+  <td>Crossbreed between the <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a> and black <a href="/wiki/Domestic_short-haired_cat" title="Domestic short-haired cat">short-haired cats</a></td>
+  <td>Semi-foreign
+  </td>
+  <td>Short</td>
+  <td>Solid brown</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Havana_Brown.jpg" class="mw-file-description"><img alt="Havana Brown" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Havana_Brown.jpg/100px-Havana_Brown.jpg" decoding="async" width="100" height="103" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Havana_Brown.jpg/150px-Havana_Brown.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Havana_Brown.jpg/199px-Havana_Brown.jpg 2x" data-file-width="915" data-file-height="947"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Highlander_cat" title="Highlander cat">Highlander</a>
+  </th>
+  <td>United States</td>
+  <td>Crossbreed between the <a href="/wiki/List_of_experimental_cat_breeds#Desert_Lynx" title="List of experimental cat breeds">Desert Lynx</a> and <a href="/wiki/List_of_experimental_cat_breeds#Jungle_Curl" title="List of experimental cat breeds">Jungle Curl</a></td>
+  <td>Moderate</td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Highlander-7.jpg" class="mw-file-description"><img alt="Highlander" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Highlander-7.jpg/100px-Highlander-7.jpg" decoding="async" width="100" height="82" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Highlander-7.jpg/150px-Highlander-7.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/15/Highlander-7.jpg/200px-Highlander-7.jpg 2x" data-file-width="1036" data-file-height="848"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Himalayan_cat" title="Himalayan cat">Himalayan</a> or<br>Colorpoint Persian<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[c]</a></sup>
+  </th>
+  <td>United States and United Kingdom<sup id="cite_ref-Paragon_10-18" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Persian_cat" title="Persian cat">Persian</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a></td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Sonny_Bunny.jpg" class="mw-file-description"><img alt="Himalayan or Colorpoint Persian" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sonny_Bunny.jpg/100px-Sonny_Bunny.jpg" decoding="async" width="100" height="151" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sonny_Bunny.jpg/150px-Sonny_Bunny.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sonny_Bunny.jpg/200px-Sonny_Bunny.jpg 2x" data-file-width="2140" data-file-height="3236"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Japanese_Bobtail" title="Japanese Bobtail">Japanese Bobtail</a>
+  </th>
+  <td>Japan<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[d]</a></sup><sup id="cite_ref-Paragon_10-19" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of shortened tail</td>
+  <td>Moderate</td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:JapaneseBobtailBlueEyedMi-ke.JPG" class="mw-file-description"><img alt="Japanese Bobtail" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/56/JapaneseBobtailBlueEyedMi-ke.JPG/100px-JapaneseBobtailBlueEyedMi-ke.JPG" decoding="async" width="100" height="72" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/56/JapaneseBobtailBlueEyedMi-ke.JPG/150px-JapaneseBobtailBlueEyedMi-ke.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/56/JapaneseBobtailBlueEyedMi-ke.JPG/200px-JapaneseBobtailBlueEyedMi-ke.JPG 2x" data-file-width="650" data-file-height="465"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Javanese_cat" title="Javanese cat">Javanese</a> or<br>Colorpoint Longhair<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[e]</a></sup>
+  </th>
+  <td>Developed in United States<sup id="cite_ref-Paragon_10-20" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup> and Canada;<br>foundation stock from Southeast Asia</td>
+  <td>Crossbreed between the <a href="/wiki/Balinese_cat" title="Balinese cat">Balinese</a> (with some <a href="/wiki/Colorpoint_Shorthair" title="Colorpoint Shorthair">Colorpoint Shorthair</a>), <a href="/wiki/Oriental_Longhair" title="Oriental Longhair">Oriental Longhair</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a></td>
+  <td>Oriental</td>
+  <td>Long</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Javanese_cat.jpg" class="mw-file-description"><img alt="Javanese or Colorpoint Longhair" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Javanese_cat.jpg/100px-Javanese_cat.jpg" decoding="async" width="100" height="133" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Javanese_cat.jpg/150px-Javanese_cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Javanese_cat.jpg/199px-Javanese_cat.jpg 2x" data-file-width="400" data-file-height="533"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/w/index.php?title=Kanaani_cat&amp;action=edit&amp;redlink=1" class="new" title="Kanaani cat (page does not exist)">Kanaani</a>
+  </th>
+  <td>Israel<sup id="cite_ref-:1_12-5" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Hybrid of <a href="/wiki/Domestic_short-haired_cat" title="Domestic short-haired cat">short-haired cats</a> ×&nbsp; <a href="/wiki/African_wildcat" title="African wildcat">African wildcat</a> (<i>Felis lybica</i>)</td>
+  <td>Semi-foreign
+  </td>
+  <td>Short</td>
+  <td>Solid black, chocolate spotted tabby or cinnamon spotted tabby</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Khao_Manee" title="Khao Manee">Khao Manee</a>
+  </th>
+  <td>Thailand<sup id="cite_ref-:1_12-6" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Natural</td>
+  <td>Moderate
+  </td>
+  <td>Short</td>
+  <td>Solid white</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Khao_Manee_%22ChaWee%22.jpg" class="mw-file-description"><img alt="Khao Manee" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Khao_Manee_%22ChaWee%22.jpg/100px-Khao_Manee_%22ChaWee%22.jpg" decoding="async" width="100" height="158" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Khao_Manee_%22ChaWee%22.jpg/150px-Khao_Manee_%22ChaWee%22.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/98/Khao_Manee_%22ChaWee%22.jpg/200px-Khao_Manee_%22ChaWee%22.jpg 2x" data-file-width="1212" data-file-height="1916"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/w/index.php?title=Kinkalow&amp;action=edit&amp;redlink=1" class="new" title="Kinkalow (page does not exist)">Kinkalow</a>
+  </th>
+  <td>United States</td>
+  <td>Crossbreed between the Munchkin and American Curl</td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a>
+  </td>
+  <td>Short</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Kinkalow1.JPG" class="mw-file-description"><img alt="Kinkalow" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Kinkalow1.JPG/100px-Kinkalow1.JPG" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Kinkalow1.JPG/150px-Kinkalow1.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/51/Kinkalow1.JPG/200px-Kinkalow1.JPG 2x" data-file-width="3456" data-file-height="5184"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Korat" title="Korat">Korat</a>
+  </th>
+  <td>Thailand<sup id="cite_ref-Paragon_10-21" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Semi-foreign or semi-cobby and muscular
+  </td>
+  <td>Short</td>
+  <td>Solid blue</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Korat_Fond_Blanc.jpg" class="mw-file-description"><img alt="Korat" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Korat_Fond_Blanc.jpg/99px-Korat_Fond_Blanc.jpg" decoding="async" width="99" height="116" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Korat_Fond_Blanc.jpg/149px-Korat_Fond_Blanc.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Korat_Fond_Blanc.jpg/199px-Korat_Fond_Blanc.jpg 2x" data-file-width="446" data-file-height="520"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Korean_Bobtail" class="mw-redirect" title="Korean Bobtail">Korean Bobtail</a>
+  </th>
+  <td>Korea</td>
+  <td>Natural, mutation of shortened tail</td>
+  <td>Moderate
+  </td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Japanese_Bobtail_walking.JPG" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Bobtail_walking.JPG/100px-Japanese_Bobtail_walking.JPG" decoding="async" width="100" height="88" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Bobtail_walking.JPG/150px-Japanese_Bobtail_walking.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Japanese_Bobtail_walking.JPG/200px-Japanese_Bobtail_walking.JPG 2x" data-file-width="1647" data-file-height="1447"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row">Korn Ja
+  </th>
+  <td>Thailand</td>
+  <td>Natural</td>
+  <td>Small
+  </td>
+  <td>Short</td>
+  <td>Solid black</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Kurilian_Bobtail" title="Kurilian Bobtail">Kurilian Bobtail</a> or<br>Kuril Islands Bobtail
+  </th>
+  <td><a href="/wiki/Kuril_Islands" title="Kuril Islands">Kuril Islands</a>, North Pacific<sup id="cite_ref-:1_12-7" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Natural, mutation of shortened tail</td>
+  <td>Semi-cobby</td>
+  <td>Short/long<sup id="cite_ref-:1_12-8" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Kurilian_bobtail.JPG" class="mw-file-description"><img alt="Kurilian Bobtail or Kuril Islands Bobtail" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kurilian_bobtail.JPG/100px-Kurilian_bobtail.JPG" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kurilian_bobtail.JPG/150px-Kurilian_bobtail.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kurilian_bobtail.JPG/200px-Kurilian_bobtail.JPG 2x" data-file-width="2048" data-file-height="1536"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Lambkin_(cat)" class="mw-redirect" title="Lambkin (cat)">Lambkin</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-22" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the Munchkin and Selkirk Rex</td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Rex</td>
+  <td>All</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/LaPerm" title="LaPerm">LaPerm</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-23" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation</td>
+  <td>Moderate</td>
+  <td>Rex</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Laperm_LH_blacktabby_white.jpg" class="mw-file-description"><img alt="LaPerm" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Laperm_LH_blacktabby_white.jpg/99px-Laperm_LH_blacktabby_white.jpg" decoding="async" width="99" height="119" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Laperm_LH_blacktabby_white.jpg/149px-Laperm_LH_blacktabby_white.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Laperm_LH_blacktabby_white.jpg/198px-Laperm_LH_blacktabby_white.jpg 2x" data-file-width="362" data-file-height="434"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Lykoi" title="Lykoi">Lykoi</a>
+  </th>
+  <td>United States</td>
+  <td>Mutation</td>
+  <td>Moderate
+  </td>
+  <td>Sparse haired</td>
+  <td>Black roan</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:8-month-old_male_Lykoi.jpg" class="mw-file-description"><img alt="Lykoi" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1e/8-month-old_male_Lykoi.jpg/100px-8-month-old_male_Lykoi.jpg" decoding="async" width="100" height="132" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1e/8-month-old_male_Lykoi.jpg/150px-8-month-old_male_Lykoi.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1e/8-month-old_male_Lykoi.jpg/200px-8-month-old_male_Lykoi.jpg 2x" data-file-width="505" data-file-height="666"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Maine_Coon" title="Maine Coon">Maine Coon</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-24" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural, crossbreed</td>
+  <td>Large</td>
+  <td>Semi-long/long</td>
+  <td>All excluding chocolate and colourpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Maine_Coon_female.jpg" class="mw-file-description"><img alt="Maine Coon" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Maine_Coon_female.jpg/100px-Maine_Coon_female.jpg" decoding="async" width="100" height="100" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Maine_Coon_female.jpg/150px-Maine_Coon_female.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Maine_Coon_female.jpg/200px-Maine_Coon_female.jpg 2x" data-file-width="1362" data-file-height="1362"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Manx_cat" title="Manx cat">Manx</a>
+  </th>
+  <td>Isle of Man<sup id="cite_ref-Paragon_10-25" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of shortened tail</td>
+  <td>Moderate</td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Japanese_Bobtail_looking_like_Manx.jpg" class="mw-file-description"><img alt="Manx" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Japanese_Bobtail_looking_like_Manx.jpg/100px-Japanese_Bobtail_looking_like_Manx.jpg" decoding="async" width="100" height="70" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Japanese_Bobtail_looking_like_Manx.jpg/150px-Japanese_Bobtail_looking_like_Manx.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Japanese_Bobtail_looking_like_Manx.jpg/200px-Japanese_Bobtail_looking_like_Manx.jpg 2x" data-file-width="799" data-file-height="557"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Mekong_Bobtail" title="Mekong Bobtail">Mekong Bobtail</a>
+  </th>
+  <td>Developed in Russia;<br>foundation stock ultimately from <a href="/wiki/Southeast_Asia" title="Southeast Asia">Southeast Asia</a><sup id="cite_ref-:1_12-9" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Mutation of shortened tail</td>
+  <td>Moderate
+  </td>
+  <td>Short</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Mekong_bobtail_(Thai_bobtail)._Chocolate_point_colour._(cropped).jpg" class="mw-file-description"><img alt="Mekong Bobtail" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mekong_bobtail_%28Thai_bobtail%29._Chocolate_point_colour._%28cropped%29.jpg/100px-Mekong_bobtail_%28Thai_bobtail%29._Chocolate_point_colour._%28cropped%29.jpg" decoding="async" width="100" height="100" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mekong_bobtail_%28Thai_bobtail%29._Chocolate_point_colour._%28cropped%29.jpg/150px-Mekong_bobtail_%28Thai_bobtail%29._Chocolate_point_colour._%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mekong_bobtail_%28Thai_bobtail%29._Chocolate_point_colour._%28cropped%29.jpg/200px-Mekong_bobtail_%28Thai_bobtail%29._Chocolate_point_colour._%28cropped%29.jpg 2x" data-file-width="1125" data-file-height="1125"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Minskin" title="Minskin">Minskin</a>
+  </th>
+  <td>United States<sup id="cite_ref-:1_12-10" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Munchkin_cat" title="Munchkin cat">Munchkin</a>, <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a>, <a href="/wiki/Devon_Rex_cat" class="mw-redirect" title="Devon Rex cat">Devon Rex</a>, and <a href="/wiki/Sphynx_cat" title="Sphynx cat">Sphynx</a></td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Hairless</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Minskin_Kitten_Female_blue_tabby_color-pattern.jpg" class="mw-file-description"><img alt="Minskin" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Minskin_Kitten_Female_blue_tabby_color-pattern.jpg/100px-Minskin_Kitten_Female_blue_tabby_color-pattern.jpg" decoding="async" width="100" height="100" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/73/Minskin_Kitten_Female_blue_tabby_color-pattern.jpg/150px-Minskin_Kitten_Female_blue_tabby_color-pattern.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/73/Minskin_Kitten_Female_blue_tabby_color-pattern.jpg/200px-Minskin_Kitten_Female_blue_tabby_color-pattern.jpg 2x" data-file-width="618" data-file-height="618"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Minuet_cat" title="Minuet cat">Minuet</a>
+  </th>
+  <td>United States</td>
+  <td>Crossbreed between the <a href="/wiki/Persian_cat" title="Persian cat">Persian</a> and <a href="/wiki/Munchkin_cat" title="Munchkin cat">Munchkin</a></td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Minuet_Cat_(cropped).png" class="mw-file-description"><img alt="Minuet" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Minuet_Cat_%28cropped%29.png/100px-Minuet_Cat_%28cropped%29.png" decoding="async" width="100" height="98" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Minuet_Cat_%28cropped%29.png/150px-Minuet_Cat_%28cropped%29.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Minuet_Cat_%28cropped%29.png/200px-Minuet_Cat_%28cropped%29.png 2x" data-file-width="840" data-file-height="823"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Munchkin_cat" title="Munchkin cat">Munchkin</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-26" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of <a href="/wiki/Dwarf_cat" title="Dwarf cat">dwarf cat</a></td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Longhairedmunchkin.jpg" class="mw-file-description"><img alt="Munchkin" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Longhairedmunchkin.jpg/100px-Longhairedmunchkin.jpg" decoding="async" width="100" height="122" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Longhairedmunchkin.jpg/149px-Longhairedmunchkin.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Longhairedmunchkin.jpg/199px-Longhairedmunchkin.jpg 2x" data-file-width="450" data-file-height="551"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Nebelung" title="Nebelung">Nebelung</a>
+  </th>
+  <td>United States<sup id="cite_ref-:1_12-11" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Natural, mutation</td>
+  <td>Foreign
+  </td>
+  <td>Semi-long</td>
+  <td>Solid blue</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Nebelung_Male,_Aleksandr_van_Song_de_Chine.JPG" class="mw-file-description"><img alt="Nebelung" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG/100px-Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG" decoding="async" width="100" height="66" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG/150px-Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG/200px-Nebelung_Male%2C_Aleksandr_van_Song_de_Chine.JPG 2x" data-file-width="567" data-file-height="377"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Neva_Masquerade" title="Neva Masquerade">Neva Masquerade</a> <small>(colorpoint  <a href="/wiki/Siberian_cat" title="Siberian cat">Siberian</a>)</small><sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[f]</a></sup>
+  </th>
+  <td>Russia<sup id="cite_ref-:1_12-12" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Siberian_cat" title="Siberian cat">Siberian</a> and a colorpoint cat<sup id="cite_ref-:RC_22-0" class="reference"><a href="#cite_note-:RC-22">[16]</a></sup></td>
+  <td>Cobby<sup id="cite_ref-:1_12-13" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Long<sup id="cite_ref-:1_12-14" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:NevaMasqueradeFiona_(cropped).jpg" class="mw-file-description"><img alt="Neva Masquerade" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/92/NevaMasqueradeFiona_%28cropped%29.jpg/100px-NevaMasqueradeFiona_%28cropped%29.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/92/NevaMasqueradeFiona_%28cropped%29.jpg/150px-NevaMasqueradeFiona_%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/92/NevaMasqueradeFiona_%28cropped%29.jpg/200px-NevaMasqueradeFiona_%28cropped%29.jpg 2x" data-file-width="2671" data-file-height="2013"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Norwegian_Forest_cat" title="Norwegian Forest cat">Norwegian Forest Cat</a>
+  </th>
+  <td>Norway<sup id="cite_ref-Paragon_10-27" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Cobby
+  </td>
+  <td>Long</td>
+  <td>Chocolate or orange and white bicolor</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Norskskogkatt_Evita_3.JPG" class="mw-file-description"><img alt="Norwegian Forest Cat" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Norskskogkatt_Evita_3.JPG/100px-Norskskogkatt_Evita_3.JPG" decoding="async" width="100" height="98" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Norskskogkatt_Evita_3.JPG/150px-Norskskogkatt_Evita_3.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Norskskogkatt_Evita_3.JPG/200px-Norskskogkatt_Evita_3.JPG 2x" data-file-width="783" data-file-height="766"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Ocicat" title="Ocicat">Ocicat</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-28" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Abyssinian_cat" title="Abyssinian cat">Abyssinian</a>, <a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a></td>
+  <td>Large
+  </td>
+  <td>Short</td>
+  <td>Spotted tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Ocicat-Charan.jpg" class="mw-file-description"><img alt="Ocicat" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ocicat-Charan.jpg/100px-Ocicat-Charan.jpg" decoding="async" width="100" height="97" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ocicat-Charan.jpg/150px-Ocicat-Charan.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ocicat-Charan.jpg/200px-Ocicat-Charan.jpg 2x" data-file-width="1338" data-file-height="1292"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Ojos_Azules" title="Ojos Azules">Ojos Azules</a><br><small>(extinct)</small>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-29" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed
+  </td>
+  <td>Moderate
+  </td>
+  <td>Short
+  </td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Ojos_Azules_from_the_USA.jpg" class="mw-file-description"><img alt="Ojos Azules" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ojos_Azules_from_the_USA.jpg/99px-Ojos_Azules_from_the_USA.jpg" decoding="async" width="99" height="135" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ojos_Azules_from_the_USA.jpg/150px-Ojos_Azules_from_the_USA.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ojos_Azules_from_the_USA.jpg/199px-Ojos_Azules_from_the_USA.jpg 2x" data-file-width="400" data-file-height="542"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/w/index.php?title=Oregon_Rex&amp;action=edit&amp;redlink=1" class="new" title="Oregon Rex (page does not exist)">Oregon Rex</a><br><small>(extinct)</small>
+  </th>
+  <td>United States</td>
+  <td>Mutation</td>
+  <td></td>
+  <td>Rex</td>
+  <td></td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Oriental_bicolour" title="Oriental bicolour">Oriental Bicolor</a>
+  </th>
+  <td>Developed in United States and United Kingdom, later in Continental Europe;<br>foundation stock ultimately from Thailand</td>
+  <td>Color variety of the Oriental Shorthair
+  </td>
+  <td>Oriental</td>
+  <td>Short
+  </td>
+  <td>Bicolor</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Oriental_shorthair_20070130_caroline.jpg" class="mw-file-description"><img alt="Oriental Bicolor" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oriental_shorthair_20070130_caroline.jpg/100px-Oriental_shorthair_20070130_caroline.jpg" decoding="async" width="100" height="163" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oriental_shorthair_20070130_caroline.jpg/150px-Oriental_shorthair_20070130_caroline.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oriental_shorthair_20070130_caroline.jpg/200px-Oriental_shorthair_20070130_caroline.jpg 2x" data-file-width="275" data-file-height="448"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Oriental_Longhair" title="Oriental Longhair">Oriental Longhair</a><sup id="cite_ref-Oriental_23-0" class="reference"><a href="#cite_note-Oriental-23">[g]</a></sup>
+  </th>
+  <td>Developed in United States and United Kingdom;<br>foundation stock ultimately from Thailand<sup id="cite_ref-Paragon_10-30" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Oriental_Shorthair" title="Oriental Shorthair">Oriental Shorthair</a> and <a href="/wiki/Domestic_long-haired_cat" title="Domestic long-haired cat">long-haired cats</a>
+  </td>
+  <td>Oriental</td>
+  <td>Semi-long</td>
+  <td>All; if colorpoint is considered to be a separate breed, it is called the <a href="/wiki/Javanese_cat" title="Javanese cat">Javanese</a></td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Mandarin.jpg" class="mw-file-description"><img alt="Oriental Longhair" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mandarin.jpg/100px-Mandarin.jpg" decoding="async" width="100" height="201" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mandarin.jpg/150px-Mandarin.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mandarin.jpg/199px-Mandarin.jpg 2x" data-file-width="462" data-file-height="930"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Oriental_Shorthair" title="Oriental Shorthair">Oriental Shorthair</a><sup id="cite_ref-Oriental_23-1" class="reference"><a href="#cite_note-Oriental-23">[g]</a></sup>
+  </th>
+  <td>Developed in United States and United Kingdom;<br>foundation stock ultimately from Thailand<sup id="cite_ref-Paragon_10-31" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/European_Shorthair" title="European Shorthair">European Shorthair</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a></td>
+  <td>Oriental</td>
+  <td>Short</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Oriental_Fond_Blanc.jpg" class="mw-file-description"><img alt="Oriental Shorthair" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Oriental_Fond_Blanc.jpg/99px-Oriental_Fond_Blanc.jpg" decoding="async" width="99" height="127" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Oriental_Fond_Blanc.jpg/150px-Oriental_Fond_Blanc.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/71/Oriental_Fond_Blanc.jpg/199px-Oriental_Fond_Blanc.jpg 2x" data-file-width="970" data-file-height="1238"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Persian_cat" title="Persian cat">Persian (modern)</a>
+  </th>
+  <td>Developed in United States and Europe;<br>foundation stock from <a href="/wiki/Greater_Iran" title="Greater Iran">Greater Iran</a><sup id="cite_ref-Paragon_10-32" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of the Traditional Persian</td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>All but colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Persialainen.jpg" class="mw-file-description"><img alt="Persian, modern" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Persialainen.jpg/100px-Persialainen.jpg" decoding="async" width="100" height="140" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Persialainen.jpg/150px-Persialainen.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/81/Persialainen.jpg/200px-Persialainen.jpg 2x" data-file-width="357" data-file-height="500"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Traditional_Persian" title="Traditional Persian">Persian (traditional)</a>
+  </th>
+  <td><a href="/wiki/Greater_Iran" title="Greater Iran">Greater Iran</a><sup id="cite_ref-Paragon_10-33" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural, but some crossbreeding with the <a href="/wiki/Turkish_Angora" title="Turkish Angora">Turkish Angora</a></td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>All but colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Persian_silver_dollface.jpg" class="mw-file-description"><img alt="Traditional Persian" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Persian_silver_dollface.jpg/100px-Persian_silver_dollface.jpg" decoding="async" width="100" height="133" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Persian_silver_dollface.jpg/150px-Persian_silver_dollface.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Persian_silver_dollface.jpg/199px-Persian_silver_dollface.jpg 2x" data-file-width="720" data-file-height="960"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Peterbald" title="Peterbald">Peterbald</a>
+  </th>
+  <td>Russia</td>
+  <td>Crossbreed between the <a href="/wiki/Donskoy_cat" title="Donskoy cat">Donskoy</a>, <a href="/wiki/Oriental_Shorthair" title="Oriental Shorthair">Oriental Shorthair</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a>;<br>before this, it was between the <a href="/wiki/Balinese_cat" title="Balinese cat">Balinese</a> and <a href="/wiki/Javanese_cat" title="Javanese cat">Javanese</a></td>
+  <td>Oriental</td>
+  <td>Hairless, velour, brush, or straight coat</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Tamila_the_lilac_tabby_Peterbald_cat.jpg" class="mw-file-description"><img alt="Peterbald" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Tamila_the_lilac_tabby_Peterbald_cat.jpg/100px-Tamila_the_lilac_tabby_Peterbald_cat.jpg" decoding="async" width="100" height="100" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Tamila_the_lilac_tabby_Peterbald_cat.jpg/150px-Tamila_the_lilac_tabby_Peterbald_cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Tamila_the_lilac_tabby_Peterbald_cat.jpg/200px-Tamila_the_lilac_tabby_Peterbald_cat.jpg 2x" data-file-width="250" data-file-height="250"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Pixie-bob" title="Pixie-bob">Pixie-bob</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-34" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation (falsely claimed to be a hybrid of the <a href="/wiki/Cat" title="Cat">domestic cat</a> and the <a href="/wiki/Bobcat" title="Bobcat">bobcat</a> (<i>Lynx rufus</i>) early on)</td>
+  <td>Medium
+  </td>
+  <td>Short</td>
+  <td>Spotted tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Jarnac_Bepacific_feb07.jpg" class="mw-file-description"><img alt="Pixie-bob" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jarnac_Bepacific_feb07.jpg/100px-Jarnac_Bepacific_feb07.jpg" decoding="async" width="100" height="75" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jarnac_Bepacific_feb07.jpg/150px-Jarnac_Bepacific_feb07.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jarnac_Bepacific_feb07.jpg/200px-Jarnac_Bepacific_feb07.jpg 2x" data-file-width="640" data-file-height="480"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Ragamuffin_cat" title="Ragamuffin cat">Ragamuffin</a> or<br>Liebling <small>(obsolete)</small>
+  </th>
+  <td>United States</td>
+  <td>Crossbreed between the <a href="/wiki/Ragdoll_cat" class="mw-redirect" title="Ragdoll cat">Ragdoll</a> with limited out-crossing to the <a href="/wiki/Himalayan_cat" title="Himalayan cat">Himalayan</a>, the <a href="/wiki/Persian_cat" title="Persian cat">Persian</a>, and other <a href="/wiki/Domestic_long-haired_cat" title="Domestic long-haired cat">long-haired cats</a></td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:20050922AmarilloRes.jpg" class="mw-file-description"><img alt="Ragamuffin" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20050922AmarilloRes.jpg/100px-20050922AmarilloRes.jpg" decoding="async" width="100" height="119" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20050922AmarilloRes.jpg/150px-20050922AmarilloRes.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f3/20050922AmarilloRes.jpg/200px-20050922AmarilloRes.jpg 2x" data-file-width="632" data-file-height="752"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Ragdoll" title="Ragdoll">Ragdoll</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-35" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Behavioral mutation in a crossbreed, presumed to be between the <a href="/wiki/Persian_cat" title="Persian cat">Persian</a> or <a href="/wiki/Turkish_Angora" title="Turkish Angora">Turkish Angora</a> and the <a href="/wiki/Birman_cat" class="mw-redirect" title="Birman cat">Birman</a> or <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a></td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>Colorpoint, mitted, or bicolor</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Ragdoll.jpg" class="mw-file-description"><img alt="Ragdoll" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ragdoll.jpg/100px-Ragdoll.jpg" decoding="async" width="100" height="93" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ragdoll.jpg/150px-Ragdoll.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ragdoll.jpg/200px-Ragdoll.jpg 2x" data-file-width="840" data-file-height="777"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Raas_cat" title="Raas cat">Raas</a>
+  </th>
+  <td><a href="/wiki/Raas_Island" title="Raas Island">Raas Island</a>, <a href="/wiki/Indonesia" title="Indonesia">Indonesia</a></td>
+  <td>Natural</td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Solid blue, solid cinnamon, or cinnamon colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Kucing_Busok_Jantan.jpg" class="mw-file-description"><img alt="Raas" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Kucing_Busok_Jantan.jpg/100px-Kucing_Busok_Jantan.jpg" decoding="async" width="100" height="62" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Kucing_Busok_Jantan.jpg/150px-Kucing_Busok_Jantan.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Kucing_Busok_Jantan.jpg/200px-Kucing_Busok_Jantan.jpg 2x" data-file-width="640" data-file-height="395"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Russian_Blue" title="Russian Blue">Russian Blue</a>
+  </th>
+  <td>Russia<sup id="cite_ref-Paragon_10-36" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Moderate, Oriental
+  </td>
+  <td>Short</td>
+  <td>Solid blue</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Russian_Blue_001.gif" class="mw-file-description"><img alt="Russian Blue" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Russian_Blue_001.gif/100px-Russian_Blue_001.gif" decoding="async" width="100" height="144" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Russian_Blue_001.gif/149px-Russian_Blue_001.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Russian_Blue_001.gif/199px-Russian_Blue_001.gif 2x" data-file-width="300" data-file-height="433"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Russian_White,_Black,_and_Tabby" title="Russian White, Black, and Tabby">Russian White, Russian Black and Russian Tabby</a>
+  </th>
+  <td>Developed in Australia;<br>foundation stock from Russia</td>
+  <td>Crossbreeds between the <a href="/wiki/Russian_Blue" title="Russian Blue">Russian Blue</a> and <a href="/wiki/Domestic_short-haired_cat" title="Domestic short-haired cat">short-haired cats</a> from Siberia, Russia</td>
+  <td>Moderate
+  </td>
+  <td>Short</td>
+  <td>Solid white, solid black and tabby</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Thai_cat" title="Thai cat">Sam Sawet</a>
+  </th>
+  <td>Thailand</td>
+  <td>Color variety of the <a href="/wiki/Thai_cat" title="Thai cat">Thai</a></td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Solid</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Savannah_cat" title="Savannah cat">Savannah</a>
+  </th>
+  <td>United States<sup id="cite_ref-:1_12-15" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Hybrid of the <a href="/wiki/Cat" title="Cat">domestic cat</a> x&nbsp;<a href="/wiki/Serval" title="Serval">serval</a> (<i>Leptailurus serval</i>)<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[17]</a></sup></td>
+  <td>Large</td>
+  <td>Short</td>
+  <td>Spotted</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Savannah_Cat_portrait.jpg" class="mw-file-description"><img alt="Savannah" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/100px-Savannah_Cat_portrait.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/150px-Savannah_Cat_portrait.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Savannah_Cat_portrait.jpg/200px-Savannah_Cat_portrait.jpg 2x" data-file-width="1440" data-file-height="2160"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Scottish_Fold" title="Scottish Fold">Scottish Fold</a>
+  </th>
+  <td>United Kingdom (Scotland)<sup id="cite_ref-Paragon_10-37" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of the <a href="/wiki/Bone" title="Bone">bones</a> and <a href="/wiki/Cartilage" title="Cartilage">cartilage</a> of the ears</td>
+  <td>Cobby</td>
+  <td>Short/long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Scottish_Fond_Blanc.jpg" class="mw-file-description"><img alt="Lilac-coated Scottish Fold" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Scottish_Fond_Blanc.jpg/99px-Scottish_Fond_Blanc.jpg" decoding="async" width="99" height="118" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Scottish_Fond_Blanc.jpg/149px-Scottish_Fond_Blanc.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Scottish_Fond_Blanc.jpg/199px-Scottish_Fond_Blanc.jpg 2x" data-file-width="734" data-file-height="872"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Selkirk_Rex" title="Selkirk Rex">Selkirk Rex</a>
+  </th>
+  <td>United States in 1988<sup id="cite_ref-Paragon_10-38" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation/crossbreed between the <a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a>, <a href="/wiki/Persian_cat" title="Persian cat">Persian</a>, <a href="/wiki/Himalayan_cat" title="Himalayan cat">Himalayan</a>, <a href="/wiki/Exotic_Shorthair" title="Exotic Shorthair">Exotic Shorthair</a> and <a href="/wiki/British_Shorthair" title="British Shorthair">British Shorthair</a></td>
+  <td>Large and cobby</td>
+  <td>Short/long (longhair, sometimes in early generations, can appear to be semi-long)</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Selkirk_Longhair.jpg" class="mw-file-description"><img alt="Selkirk Rex" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Selkirk_Longhair.jpg/100px-Selkirk_Longhair.jpg" decoding="async" width="100" height="84" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Selkirk_Longhair.jpg/150px-Selkirk_Longhair.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Selkirk_Longhair.jpg/200px-Selkirk_Longhair.jpg 2x" data-file-width="1160" data-file-height="972"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Serengeti_cat" title="Serengeti cat">Serengeti</a>
+  </th>
+  <td>United States</td>
+  <td>Crossbreed/hybrid between the <a href="/wiki/Bengal_cat" title="Bengal cat">Bengal</a> and <a href="/wiki/Oriental_Shorthair" title="Oriental Shorthair">Oriental Shorthair</a></td>
+  <td>Oriental</td>
+  <td>Short</td>
+  <td>Spotted</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Serengetimalecat.jpg" class="mw-file-description"><img alt="Serengeti" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Serengetimalecat.jpg/100px-Serengetimalecat.jpg" decoding="async" width="100" height="78" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Serengetimalecat.jpg/150px-Serengetimalecat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Serengetimalecat.jpg/200px-Serengetimalecat.jpg 2x" data-file-width="1157" data-file-height="900"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/w/index.php?title=Serrade_Petit&amp;action=edit&amp;redlink=1" class="new" title="Serrade Petit (page does not exist)">Serrade Petit</a>
+  </th>
+  <td>France</td>
+  <td>Natural</td>
+  <td>Semi-cobby</td>
+  <td>Short</td>
+  <td>Solid tan, solid orange and solid white</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Serrade_petit.jpg" class="mw-file-description"><img alt="Serrade petit" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Serrade_petit.jpg/100px-Serrade_petit.jpg" decoding="async" width="100" height="90" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Serrade_petit.jpg/150px-Serrade_petit.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Serrade_petit.jpg/200px-Serrade_petit.jpg 2x" data-file-width="510" data-file-height="460"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a> (modern)
+  <p><small>(for traditional, see <style data-mw-deduplicate="TemplateStyles:r1033199720">.mw-parser-output div.crossreference{padding-left:0}</style><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><span role="note" class="hatnote navigation-not-searchable crossreference selfref"><a href="#Thai">Thai</a></span> below)</small>
+  </p>
+  </th>
+  <td>Developed in United States and Europe;<br>foundation stock from Thailand<sup id="cite_ref-Paragon_10-39" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation of the <a href="/wiki/Thai_cat" title="Thai cat">Thai</a></td>
+  <td>Oriental</td>
+  <td>Short</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Siamese_cat_Vaillante.JPG" class="mw-file-description"><img alt="Siamese" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/Siamese_cat_Vaillante.JPG/100px-Siamese_cat_Vaillante.JPG" decoding="async" width="100" height="125" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/Siamese_cat_Vaillante.JPG/150px-Siamese_cat_Vaillante.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/16/Siamese_cat_Vaillante.JPG/200px-Siamese_cat_Vaillante.JPG 2x" data-file-width="480" data-file-height="600"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Siberian_cat" title="Siberian cat">Siberian</a> or<br>Siberian Forest Cat
+  <p><small>(for colorpoint, see <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033199720"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><span role="note" class="hatnote navigation-not-searchable crossreference selfref"><a href="#Neva_Masquerade">Neva Masquerade</a></span>)</small>
+  </p>
+  </th>
+  <td>Russia, Ukraine<sup id="cite_ref-Paragon_10-40" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Cobby<sup id="cite_ref-:1_12-16" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Long<sup id="cite_ref-:1_12-17" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>All; except chocolate, lilac, cinnamon, and fawn<sup id="cite_ref-:0_25-0" class="reference"><a href="#cite_note-:0-25">[18]</a></sup></td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Minniecat.png" class="mw-file-description"><img alt="Siberian" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Minniecat.png/100px-Minniecat.png" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Minniecat.png/150px-Minniecat.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Minniecat.png/200px-Minniecat.png 2x" data-file-width="1220" data-file-height="1830"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Singapura_cat" title="Singapura cat">Singapura</a>
+  </th>
+  <td>Developed in United States;<br>foundation stock from Singapore<sup id="cite_ref-Paragon_10-41" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Possibly a mutation of a crossbreed (excluding the <a href="/wiki/Munchkin_cat" title="Munchkin cat">Munchkin</a>), solving why they are so small</td>
+  <td>Small</td>
+  <td>Short</td>
+  <td>Ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Singapura.jpg" class="mw-file-description"><img alt="Singapura" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Singapura.jpg/100px-Singapura.jpg" decoding="async" width="100" height="126" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Singapura.jpg/149px-Singapura.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Singapura.jpg/199px-Singapura.jpg 2x" data-file-width="711" data-file-height="899"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Snowshoe_cat" title="Snowshoe cat">Snowshoe</a>
+  </th>
+  <td>United States<sup id="cite_ref-Paragon_10-42" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/American_Shorthair" title="American Shorthair">American Shorthair</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a></td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Mitted colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Chizhik_Cat_(cropped).jpg" class="mw-file-description"><img alt="Snowshoe" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Chizhik_Cat_%28cropped%29.jpg/100px-Chizhik_Cat_%28cropped%29.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Chizhik_Cat_%28cropped%29.jpg/149px-Chizhik_Cat_%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/27/Chizhik_Cat_%28cropped%29.jpg/199px-Chizhik_Cat_%28cropped%29.jpg 2x" data-file-width="2312" data-file-height="3479"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Sokoke" title="Sokoke">Sokoke</a>
+  </th>
+  <td>Kenya<sup id="cite_ref-:1_12-18" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Natural</td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Sokoke.jpg" class="mw-file-description"><img alt="Sokoke" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sokoke.jpg/100px-Sokoke.jpg" decoding="async" width="100" height="103" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sokoke.jpg/150px-Sokoke.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sokoke.jpg/199px-Sokoke.jpg 2x" data-file-width="388" data-file-height="401"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Somali_cat" title="Somali cat">Somali</a>
+  </th>
+  <td>United States, Canada</td>
+  <td>Mutation</td>
+  <td>Cobby</td>
+  <td>Long</td>
+  <td>Ticked tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg" class="mw-file-description"><img alt="Somali" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg/100px-%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg" decoding="async" width="100" height="140" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg/150px-%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg/199px-%D0%A1%D0%BE%D0%BC%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0.jpg 2x" data-file-width="1052" data-file-height="1476"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Sphynx_cat" title="Sphynx cat">Sphynx</a>
+  </th>
+  <td>Canada, Europe<sup id="cite_ref-Paragon_10-43" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Mutation</td>
+  <td>Oriental</td>
+  <td>Hairless</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Cat_Sphynx._img_040.jpg" class="mw-file-description"><img alt="Sphynx" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cat_Sphynx._img_040.jpg/100px-Cat_Sphynx._img_040.jpg" decoding="async" width="100" height="145" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cat_Sphynx._img_040.jpg/150px-Cat_Sphynx._img_040.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cat_Sphynx._img_040.jpg/199px-Cat_Sphynx._img_040.jpg 2x" data-file-width="3000" data-file-height="4360"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Suphalak" title="Suphalak">Suphalak</a>
+  </th>
+  <td>Thailand</td>
+  <td>Natural</td>
+  <td>Moderate
+  </td>
+  <td>Short</td>
+  <td>Solid reddish-brown</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Suphalak_Female_in_Thailand_named_AumDaengManee.jpg" class="mw-file-description"><img alt="Suphalak" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Suphalak_Female_in_Thailand_named_AumDaengManee.jpg/100px-Suphalak_Female_in_Thailand_named_AumDaengManee.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Suphalak_Female_in_Thailand_named_AumDaengManee.jpg/150px-Suphalak_Female_in_Thailand_named_AumDaengManee.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/52/Suphalak_Female_in_Thailand_named_AumDaengManee.jpg/200px-Suphalak_Female_in_Thailand_named_AumDaengManee.jpg 2x" data-file-width="2848" data-file-height="4272"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Thai_cat" title="Thai cat">Thai</a> or<br>Traditional, Classic, or Old-style Siamese;<br>Wichien Maat<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[h]</a></sup>
+  </th>
+  <td>Developed in Europe;<sup id="cite_ref-:1_12-19" class="reference"><a href="#cite_note-:1-12">[12]</a></sup><br>foundation stock from Thailand<sup id="cite_ref-Paragon_10-44" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Colorpoint</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D1%82_%D0%9B%D1%83%D0%BB%D0%B0%D0%BC%D0%B5%D0%B9_%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0,_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_WCF,_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D0%B1%D0%BB%D1%8E_%D0%BF%D0%BE%D0%B8%D0%BD%D1%82_01_(cropped).jpg" class="mw-file-description"><img alt="Thai" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D1%82_%D0%9B%D1%83%D0%BB%D0%B0%D0%BC%D0%B5%D0%B9_%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%2C_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_WCF%2C_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D0%B1%D0%BB%D1%8E_%D0%BF%D0%BE%D0%B8%D0%BD%D1%82_01_%28cropped%29.jpg/100px-thumbnail.jpg" decoding="async" width="100" height="67" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D1%82_%D0%9B%D1%83%D0%BB%D0%B0%D0%BC%D0%B5%D0%B9_%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%2C_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_WCF%2C_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D0%B1%D0%BB%D1%8E_%D0%BF%D0%BE%D0%B8%D0%BD%D1%82_01_%28cropped%29.jpg/150px-thumbnail.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D1%82_%D0%9B%D1%83%D0%BB%D0%B0%D0%BC%D0%B5%D0%B9_%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%2C_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_WCF%2C_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D0%B1%D0%BB%D1%8E_%D0%BF%D0%BE%D0%B8%D0%BD%D1%82_01_%28cropped%29.jpg/200px-thumbnail.jpg 2x" data-file-width="819" data-file-height="546"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Korat#Thai_Lilac,_Thai_Blue_Point_and_Thai_Lilac_Point" title="Korat">Thai Lilac, Thai Blue Point and Thai Lilac Point</a>
+  </th>
+  <td>Thailand</td>
+  <td>Color varieties of the <a href="/wiki/Korat" title="Korat">Korat</a></td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Solid lilac and colorpoint (blue point and lilac point only)</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg" class="mw-file-description"><img alt="Thai Lilac" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg/100px-The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg" decoding="async" width="100" height="118" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg/150px-The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg/200px-The_only_two_Thai_Lilac_Points_in_the_UK_-_Clairabelle_Pixie_Dust_%26_Clairabelle_Ninja_Rococoa.jpg 2x" data-file-width="1737" data-file-height="2051"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Tonkinese_cat" title="Tonkinese cat">Tonkinese</a>
+  </th>
+  <td>Canada, United States<sup id="cite_ref-Paragon_10-45" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Crossbreed between the <a href="/wiki/Burmese_cat" title="Burmese cat">Burmese</a> and <a href="/wiki/Siamese_cat" title="Siamese cat">Siamese</a></td>
+  <td>Oriental
+  </td>
+  <td>Short</td>
+  <td>Colorpoint, mink, or solid</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Tonkinois.jpg" class="mw-file-description"><img alt="Tonkinese" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tonkinois.jpg/100px-Tonkinois.jpg" decoding="async" width="100" height="83" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tonkinois.jpg/150px-Tonkinois.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tonkinois.jpg/200px-Tonkinois.jpg 2x" data-file-width="600" data-file-height="500"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Toybob" title="Toybob">Toybob</a>
+  </th>
+  <td>Russia</td>
+  <td>Mutation</td>
+  <td><a href="/wiki/Dwarf_cat" title="Dwarf cat">Dwarf</a></td>
+  <td>Short</td>
+  <td>All</td>
+  <td>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Toyger" title="Toyger">Toyger</a>
+  </th>
+  <td>United States<sup id="cite_ref-:1_12-20" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Crossbreed/hybrid between the <a href="/wiki/Bengal_cat" title="Bengal cat">Bengal</a> and <a href="/wiki/Domestic_short-haired_cat" title="Domestic short-haired cat">short-haired cats</a></td>
+  <td>Moderate</td>
+  <td>Short</td>
+  <td>Mackerel tabby</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG" class="mw-file-description"><img alt="Toyger" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG/100px-Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG" decoding="async" width="100" height="93" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG/150px-Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG/200px-Toyger_-_Cornish_Rex_presentation_show_Riihim%C3%A4ki_2008-11-16_IMG_0101.JPG 2x" data-file-width="885" data-file-height="819"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Turkish_Angora" title="Turkish Angora">Turkish Angora</a>
+  </th>
+  <td>Turkey<sup id="cite_ref-Paragon_10-46" class="reference"><a href="#cite_note-Paragon-10">[10]</a></sup></td>
+  <td>Natural</td>
+  <td>Semi-cobby
+  </td>
+  <td>Semi-long</td>
+  <td>All</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Fantine_de_l%27Empire_Ottoman.jpg" class="mw-file-description"><img alt="Turkish Angora" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/39/Fantine_de_l%27Empire_Ottoman.jpg/100px-Fantine_de_l%27Empire_Ottoman.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/39/Fantine_de_l%27Empire_Ottoman.jpg/150px-Fantine_de_l%27Empire_Ottoman.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/39/Fantine_de_l%27Empire_Ottoman.jpg/200px-Fantine_de_l%27Empire_Ottoman.jpg 2x" data-file-width="2336" data-file-height="3504"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Turkish_Van" title="Turkish Van">Turkish Van</a>
+  </th>
+  <td>Developed in United Kingdom;<br>foundation stock from <a href="/wiki/Lake_Van" title="Lake Van">Lake Van</a>, Turkey<sup id="cite_ref-:1_12-21" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Natural</td>
+  <td>Semi-cobby
+  </td>
+  <td>Semi-long</td>
+  <td>Van pattern</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Turkish_Van_Example2.jpg" class="mw-file-description"><img alt="Turkish Van" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Turkish_Van_Example2.jpg/100px-Turkish_Van_Example2.jpg" decoding="async" width="100" height="85" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Turkish_Van_Example2.jpg/150px-Turkish_Van_Example2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/11/Turkish_Van_Example2.jpg/200px-Turkish_Van_Example2.jpg 2x" data-file-width="556" data-file-height="470"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Van_cat" title="Van cat">Turkish Vankedisi</a><br><small>(white variety of <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033199720"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><span role="note" class="hatnote navigation-not-searchable crossreference selfref"><a href="#Turkish_Van">Turkish Van</a></span>)</small>
+  </th>
+  <td><a href="/wiki/Lake_Van" title="Lake Van">Lake Van</a>, Turkey<sup id="cite_ref-:1_12-22" class="reference"><a href="#cite_note-:1-12">[12]</a></sup></td>
+  <td>Natural</td>
+  <td>Svelte
+  </td>
+  <td>Long</td>
+  <td>Solid white</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Van_Cat_2_2015.JPG" class="mw-file-description"><img alt="Van cat" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Van_Cat_2_2015.JPG/100px-Van_Cat_2_2015.JPG" decoding="async" width="100" height="90" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Van_Cat_2_2015.JPG/150px-Van_Cat_2_2015.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Van_Cat_2_2015.JPG/200px-Van_Cat_2_2015.JPG 2x" data-file-width="888" data-file-height="801"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/Ukrainian_Levkoy" title="Ukrainian Levkoy">Ukrainian Levkoy</a>
+  </th>
+  <td>Ukraine</td>
+  <td>Crossbreed between the <a href="/wiki/Donskoy_cat" title="Donskoy cat">Donskoy</a> and <a href="/wiki/Scottish_Fold" title="Scottish Fold">Scottish Fold</a>
+  </td>
+  <td>Moderate
+  </td>
+  <td>Hairless</td>
+  <td>Solid gray
+  </td>
+  <td><span typeof="mw:File"><a href="/wiki/File:Ukrainian_Levkoy_cat.jpg" class="mw-file-description"><img alt="Ukrainian Levkoy" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ukrainian_Levkoy_cat.jpg/100px-Ukrainian_Levkoy_cat.jpg" decoding="async" width="100" height="95" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ukrainian_Levkoy_cat.jpg/150px-Ukrainian_Levkoy_cat.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/92/Ukrainian_Levkoy_cat.jpg/200px-Ukrainian_Levkoy_cat.jpg 2x" data-file-width="600" data-file-height="570"></a></span>
+  </td></tr>
+  <tr>
+  <th scope="row"><a href="/wiki/York_Chocolate" title="York Chocolate">York Chocolate</a>
+  </th>
+  <td><a href="/wiki/New_York_(state)" title="New York (state)">New York</a>, United States</td>
+  <td>Natural</td>
+  <td>Moderate
+  </td>
+  <td>Long</td>
+  <td>Solid chocolate, solid lilac and solid taupe or any of these colors with white</td>
+  <td><span typeof="mw:File"><a href="/wiki/File:York_Chocolate.jpg" class="mw-file-description"><img alt="York Chocolate" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/York_Chocolate.jpg/100px-York_Chocolate.jpg" decoding="async" width="100" height="150" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/York_Chocolate.jpg/150px-York_Chocolate.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/26/York_Chocolate.jpg/200px-York_Chocolate.jpg 2x" data-file-width="1696" data-file-height="2544"></a></span>
+  </td></tr></tbody><tfoot></tfoot></table>
+  Source: <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds">List of cat breeds (Wikipedia)</a>, unchanged, licence <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">Creative Commons Attribution-ShareAlike 4.0</a>
+</body>
+</html>
