@@ -228,7 +228,7 @@
         {
             "Breed": "Chausie",
             "LocationOrigin": "United States",
-            "Type": "Hybrid of the Abyssinian ×&nbsp;jungle cat (Felis chaus)",
+            "Type": "Hybrid of the Abyssinian, jungle cat (Felis chaus)",
             "Body": "Normal",
             "Coat": "Short",
             "CoatPattern": "Solid black, black grizzled tabby and black ticked tabby"
@@ -253,8 +253,8 @@
             
         },
         {
-            "Breed": "Cymric, Manx Longhair or Long-haired Manx[a]",
-            "LocationOrigin": "Isle of Man, United States, and Canada [b]",
+            "Breed": "Cymric, Manx Longhair or Long-haired Manx",
+            "LocationOrigin": "Isle of Man, United States, and Canada",
             "Type": "Mutation of the Manx (shortened tail)",
             "Body": "Semi-cobby",
             "Coat": "Long",
@@ -370,7 +370,7 @@
             
         },
         {
-            "Breed": "Himalayan orColorpoint Persian[c]",
+            "Breed": "Himalayan orColorpoint Persian",
             "LocationOrigin": "United States and United Kingdom",
             "Type": "Crossbreed between the Persian and Siamese",
             "Body": "Cobby",
@@ -380,7 +380,7 @@
         },
         {
             "Breed": "Japanese Bobtail",
-            "LocationOrigin": "Japan[d]",
+            "LocationOrigin": "Japan",
             "Type": "Mutation of shortened tail",
             "Body": "Moderate",
             "Coat": "Short/long",
@@ -388,7 +388,7 @@
             
         },
         {
-            "Breed": "Javanese orColorpoint Longhair[e]",
+            "Breed": "Javanese orColorpoint Longhair",
             "LocationOrigin": "Developed in United States and Canada;foundation stock from Southeast Asia",
             "Type": "Crossbreed between the Balinese (with some Colorpoint Shorthair), Oriental Longhair and Siamese",
             "Body": "Oriental",
@@ -550,7 +550,7 @@
             
         },
         {
-            "Breed": "Neva Masquerade (colorpoint  Siberian)[f]",
+            "Breed": "Neva Masquerade (colorpoint  Siberian)",
             "LocationOrigin": "Russia",
             "Type": "Crossbreed between the Siberian and a colorpoint cat",
             "Body": "Cobby",
@@ -602,7 +602,7 @@
             
         },
         {
-            "Breed": "Oriental Longhair[g]",
+            "Breed": "Oriental Longhair",
             "LocationOrigin": "Developed in United States and United Kingdom;foundation stock ultimately from Thailand",
             "Type": "Crossbreed between the Oriental Shorthair and long-haired cats",
             "Body": "Oriental",
@@ -611,7 +611,7 @@
             
         },
         {
-            "Breed": "Oriental Shorthair[g]",
+            "Breed": "Oriental Shorthair",
             "LocationOrigin": "Developed in United States and United Kingdom;foundation stock ultimately from Thailand",
             "Type": "Crossbreed between the European Shorthair and Siamese",
             "Body": "Oriental",
@@ -755,7 +755,7 @@
             
         },
         {
-            "Breed": "Siamese (modern)\n  (for traditional, see .mw-parser-output div.crossreference{padding-left:0}.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}Thai below)\n  ",
+            "Breed": "Siamese (modern)\n  (for traditional, see Thai below)\n  ",
             "LocationOrigin": "Developed in United States and Europe;foundation stock from Thailand",
             "Type": "Mutation of the Thai",
             "Body": "Oriental",
@@ -827,7 +827,7 @@
             
         },
         {
-            "Breed": "Thai orTraditional, Classic, or Old-style Siamese;Wichien Maat[h]",
+            "Breed": "Thai orTraditional, Classic, or Old-style Siamese;Wichien Maat",
             "LocationOrigin": "Developed in Europe;foundation stock from Thailand",
             "Type": "Natural",
             "Body": "Moderate",
